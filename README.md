@@ -1,8 +1,8 @@
 <h1 align="center">
-  vatsalsinghkv.vercel.app
+  jamesvictor.vercel.app
 </h1>
 <p align="center">
-  A portfolio website i.e. <a href="https://vatsalsinghkv.vercel.app" target="_blank">vatsalsinghkv.vercel.app</a> built with <a href="https://nextjs.org/" target="_blank">Next.js</a> and hosted with <a href="https://vercel.com/" target="_blank">Vercel</a>
+  A portfolio website i.e. <a href="https://jamesvictor.vercel.app" target="_blank">jamesvictor.vercel.app</a> built with <a href="https://nextjs.org/" target="_blank">Next.js</a> and hosted with <a href="https://vercel.com/" target="_blank">Vercel</a>
 </p>
 
 <p align="center">
@@ -14,7 +14,7 @@
 
 <br>
 
-[![My Portfolio](https://user-images.githubusercontent.com/68834718/214532356-7c56cdbd-0136-4d24-a532-d27e160ae72d.png)](https://vatsalsinghkv.vercel.app/)
+[![My Portfolio](https://user-images.githubusercontent.com/68834718/214532356-7c56cdbd-0136-4d24-a532-d27e160ae72d.png)](https://jamesvictor.vercel.app/)
 
 ## Table of Contents
 
@@ -51,7 +51,7 @@
 
 1. Fork this repository and clone the project
 
-###### Please give me proper credit by linking back to [vatsalsinghkv.vercel.app](https://vatsalsinghkv.vercel.app).
+###### Please give me proper credit by linking back to [jamesvictor.vercel.app](https://jamesvictor.vercel.app).
 
 ```bash
   git clone https://github.com/<YOUR USERNAME>/portfolio-website.git
@@ -93,8 +93,8 @@ Remember, Good PR makes you a Good contributor!
 2. Follow [Contributing Guidelines](/CONTRIBUTING.md).
 
 <div align="center">
-  <a href="https://github.com/vatsalsinghkv/portfolio-website/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=vatsalsinghkv/portfolio-website" />
+  <a href="https://github.com/spiritdev105/portfolio-website/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=jamesvictor/portfolio-website" />
   </a>
 </div>
 
@@ -109,12 +109,12 @@ Remember, Good PR makes you a Good contributor!
 ## Contact
 
 - Discord - [https://discord.gg/St2dHg9YwA](https://discord.gg/St2dHg9YwA)
-- Website - [vatsalsinghkv.vercel.app](https://vatsalsinghkv.vercel.app)
-- Github - [@vatsalsinghkv](https://github.com/vatsalsinghkv)
-- LinkedIn - [@vatsalsinghkv](https://www.linkedin.com/in/vatsalsinghkv/)
-- Twitter - [@vatsalsinghkv](https://www.twitter.com/vatsalsinghkv)
-- Instagram - [@vatsalsinghkv](https://www.instagram.com/vatsalsinghkv)
-- Facebook - [@vatsalsinghkv](https://www.facebook.com/vatsal.singh.kv)
+- Website - [jamesvictor.vercel.app](https://jamesvictor.vercel.app)
+- Github - [@jamesvictor](https://github.com/spiritdev105)
+- LinkedIn - [@jamesvictor](https://www.linkedin.com/in/jamesvictor/)
+- Twitter - [@jamesvictor](https://www.twitter.com/jamesvictor)
+- Instagram - [@jamesvictor](https://www.instagram.com/jamesvictor)
+- Facebook - [@jamesvictor](https://www.facebook.com/vatsal.singh.kv)
 
 ## Acknowledgements
 
@@ -126,4 +126,4 @@ Remember, Good PR makes you a Good contributor!
 
 Give a ⭐️ if you liked this project!
 
-[Scroll to Top](#--vatsalsinghkvvercelapp)
+[Scroll to Top](#--jamesvictorvercelapp)

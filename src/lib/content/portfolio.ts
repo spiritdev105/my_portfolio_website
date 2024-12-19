@@ -7,33 +7,33 @@
 import { StringKeyValueType } from '../types';
 
 export const socialLinks: StringKeyValueType = {
-  facebook: 'https://www.facebook.com/vatsalsinghkv',
-  instagram: 'https://www.instagram.com/vatsalsinghkv',
-  twitter: 'https://twitter.com/vatsalsinghkv',
-  github: 'https://github.com/vatsalsinghkv',
-  linkedin: 'https://www.linkedin.com/in/vatsalsinghkv/',
+  facebook: 'https://www.facebook.com/jamesvictor',
+  instagram: 'https://www.instagram.com/jamesvictor',
+  twitter: 'https://twitter.com/jamesvictor',
+  github: 'https://github.com/spiritdev105',
+  linkedin: 'https://www.linkedin.com/in/jamesvictor/',
 };
 
 export const author = {
-  name: 'Vatsal Singh',
-  email: 'vatsalsinghkv@gmail.com',
+  name: 'James Victor',
+  email: 'jamesvictor@gmail.com',
 };
 
 export const seoData = {
-  title: 'Vatsal Singh | Front-End Developer',
+  title: 'James Victor | Front-End Developer',
   description:
-    'Vatsal Singh is a front-end developer who specializes in building (and occasionally designing) exceptional visual interfaces.',
+    'James Victor is a front-end developer who specializes in building (and occasionally designing) exceptional visual interfaces.',
   author: author.name,
   image:
     'https://user-images.githubusercontent.com/68834718/217467445-0b0d2d63-f8ad-4702-8474-814eb2cbb3be.png',
-  url: 'https://vatsalsinghkv.vercel.app/',
+  url: 'https://jamesvictor.vercel.app/',
   keywords: [
     'Vatsal',
-    'Vatsal Singh',
-    '@vatsalsinghkv',
-    'vatsalsinghkv',
+    'James Victor',
+    '@jamesvictor',
+    'jamesvictor',
     'Portfolio',
     'Vatsal Portfolio ',
-    'Vatsal Singh Portfolio',
+    'James Victor Portfolio',
   ],
 };

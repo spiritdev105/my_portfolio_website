@@ -3,7 +3,7 @@ import { aboutSection } from '@/lib/content/about';
 import { author } from '@/lib/content/portfolio';
 import { getId } from '@/lib/utils/helper';
 
-import { AuthorImage, Link, ListItem, Wrapper } from '@/components';
+import { AuthorImage, ListItem, Wrapper } from '@/components';
 
 import { getSectionAnimation } from '@/styles/animations';
 
@@ -24,34 +24,13 @@ const About = () => {
       <main className="flex flex-col items-center gap-16 lg:items-start lg:flex-row">
         <div className="space-y-4 lg:w-3/5">
           <p>
-            Hi, my name is Artem Savenko, a first-year MCA student at{' '}
-            <Link
-              href="https://bhu.ac.in/"
-              target="_blank"
-              className="text-accent"
-            >
-              Banaras Hindu University
-            </Link>
+          Dedicated and efficient full stack developer with 7+ years of experience in application 
+          layers, presentation layers, and databases. I specialize in developing robust digital solutions 
+          using Laravel, React, and Vue.js, combined with a proficiency in Python. With expertise in 
+          generative AI and ChatGPT, I offer a unique edge to your projects.
             .<br /> I'm an Artist as well as crazy full stack web developer who
             wants to explore every tech stack.
           </p>
-          <p>
-            Fast-forward to today, and I've had the privilege of working at a
-            start-up -{' '}
-            <Link
-              href="https://www.pixelwand.live/"
-              target="_blank"
-              className="text-accent"
-            >
-              Pixelwand
-            </Link>
-            .
-          </p>
-          <p>
-            My main focus these days is learning mobile development and finding
-            a decent job.
-          </p>
-
           {list && (
             <>
               <p>{list.title}</p>

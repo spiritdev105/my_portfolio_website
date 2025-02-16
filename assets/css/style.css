@@ -20,7 +20,7 @@
    * colors
    */
 
-  --raw-seinna: hsl(24, 74%, 58%);
+  --raw-seinna: hsl(24, 93%, 54%);
   --sizzling-sunrise: hsl(51, 95%, 54%);
   --scarlet: hsl(13, 96%, 47%);
   --black: hsl(0, 0%, 0%);
@@ -180,6 +180,7 @@ body.active { overflow: hidden; }
 
 .h1 {
   font-size: var(--fs-1);
+  font-family: var(--ff-poppins);
   line-height: 1.2;
   font-weight: 400;
 }
@@ -441,7 +442,7 @@ body.active { overflow: hidden; }
 .navbar-link::before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 90%;
   transform: translateY(-50%);
   left: 0;
   height: 5px;
@@ -480,12 +481,33 @@ main { overflow-x: hidden; }
 
 :is(.hero-social-list, .scroll-down) { display: none; }
 
-.hero-content { max-width: 450px; }
+.hero-content1 {
+  max-width: 700px;
+  margin-bottom: 300px;
+}
+
+.hero-content1 {
+  max-width: 700px;
+  margin-bottom: 200px;
+}
+
+.name-title {
+  font-size: 100px;
+  color: hsl(24, 93%, 54%);
+}
+
+.pro-title{
+  
+}
+
+.hero-content { max-width: 450px; margin-bottom: 300px;}
 
 .hero-title {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 200px;
 }
+
+
 
 .hero .btn-primary { margin-inline: auto; }
 

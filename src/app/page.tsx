@@ -1,3 +1,5 @@
+'use client';
+
 import {
   About,
   Contact,
@@ -5,7 +7,6 @@ import {
   FeaturedProjects,
   Hero,
   Layout,
-  Projects,
   Skills,
 } from '@/containers';
 

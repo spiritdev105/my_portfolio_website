@@ -7,11 +7,14 @@ type Props = {
 };
 
 const ShowLottie = ({ path, className = '' }: Props) => {
-  return (
-    <div className={`max-w-sm md:max-w-md ${className}`}>
-      <Player autoplay loop src={path}></Player>
-    </div>
-  );
+  if (typeof document !== 'undefined') {
+    return (
+      <div className={`max-w-sm md:max-w-md ${className}`}>
+        <Player autoplay loop src={path}></Player>
+      </div>
+    );
+  }
+  return <></>;
 };
 
 export default ShowLottie;

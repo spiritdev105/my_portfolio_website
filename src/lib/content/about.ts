@@ -13,5 +13,5 @@ export const aboutSection: AboutSectionType = {
       'CSS Animations',
     ],
   },
-  img: '/artem.png',
+  img: '/jonathan.jpg',
 };

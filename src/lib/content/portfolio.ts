@@ -24,8 +24,8 @@ export const seoData = {
   description:
     'Jonathan MacLeod is a front-end developer who specializes in building (and occasionally designing) exceptional visual interfaces.',
   author: author.name,
-  // image:
-  //   'https://user-images.githubusercontent.com/68834718/217467445-0b0d2d63-f8ad-4702-8474-814eb2cbb3be.png',
+  image:
+    'https://raw.githubusercontent.com/Mickey9315/jonathan-portfolio/refs/heads/main/Screenshot%202025-02-17%20155256.png?token=GHSAT0AAAAAAC5TEQLSEYWFR2RY47M37PP4Z5TUNBQ',
   url: 'https://olafdev.site/',
   keywords: [
     'OlafDev',

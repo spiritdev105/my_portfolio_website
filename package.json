@@ -1,0 +1,37 @@
+{
+  "name": "esportfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.1.0",
+    "@next/font": "^13.4.4",
+    "emailjs": "^4.0.3",
+    "emailjs-com": "^3.2.0",
+    "framer-motion": "^10.12.16",
+    "next": "^14.1.0",
+    "react": "^18.2.0",
+    "react-countup": "^6.4.2",
+    "react-dom": "^18.2.0",
+    "react-google-recaptcha": "^3.1.0",
+    "react-icons": "^4.8.0",
+    "react-tsparticles": "^2.9.3",
+    "swiper": "^11.0.6",
+    "tailwind-scrollbar": "^3.0.4",
+    "tsparticles": "^2.9.3",
+    "variants": "^0.3.3"
+  },
+  "devDependencies": {
+    "@xpd/tailwind-3dtransforms": "^1.0.3",
+    "autoprefixer": "^10.4.14",
+    "eslint": "8.41.0",
+    "eslint-config-next": "13.4.3",
+    "postcss": "^8.4.23",
+    "tailwindcss": "^3.4.1"
+  }
+}

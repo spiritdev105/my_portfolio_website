@@ -10,7 +10,7 @@ import { useEffect, useState } from 'react';
 const ProjectCard = ({
   name,
   url,
-  repo,
+  // repo,
   year,
   img,
   tags,
@@ -48,13 +48,13 @@ const ProjectCard = ({
           <div className="flex items-center justify-between">
             <p className="font-mono text-xs capitalize">{tags.join(' | ')}</p>
             <div className="flex items-center space-x-1.5">
-              <a
+              {/* <a
                 href={repo}
                 className="block duration-200 hover:text-accent"
                 target="_blank"
               >
                 <Icon icon="tabler:brand-github" width={20} height={20} />
-              </a>
+              </a> */}
               <a
                 href={url}
                 className="block duration-200 hover:text-accent"

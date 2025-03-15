@@ -14,7 +14,7 @@ import { useState, useEffect } from 'react';
 import Vapi from '@vapi-ai/web';
 import { Icon } from '@iconify/react';
 
-const vapi = new Vapi("eda9b264-2a2f-41c8-876c-7a53075b83f3");
+const vapi = new Vapi("3fa5a02c-d3e5-4e57-acfd-3a912a02df16");
 
 /**
  * TODO: Create separate page for all the projects with filters (vercel | netlify | github api for automation)

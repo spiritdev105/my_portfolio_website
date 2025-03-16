@@ -9,12 +9,13 @@ import {
   Skills,
 } from '@/containers';
 import { Hero } from '@/containers';
-import type { NextPage } from 'next';
-import { useState, useEffect } from 'react';
-import Vapi from '@vapi-ai/web';
-import { Icon } from '@iconify/react';
 
-const vapi = new Vapi("3fa5a02c-d3e5-4e57-acfd-3a912a02df16");
+import { Icon } from '@iconify/react';
+import Vapi from '@vapi-ai/web';
+import type { NextPage } from 'next';
+import { useEffect, useState } from 'react';
+
+const vapi = new Vapi('3fa5a02c-d3e5-4e57-acfd-3a912a02df16');
 
 /**
  * TODO: Create separate page for all the projects with filters (vercel | netlify | github api for automation)
@@ -30,37 +31,37 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     const handleCallStart = () => {
-      console.log('Call started');
       setIsVapiActive(true);
       setError(null);
       setIsTalkingOpen(true);
     };
 
     const handleCallEnd = () => {
-      console.log('Call ended');
       setIsVapiActive(false);
       setIsListening(false);
       setIsTalkingOpen(false);
     };
 
     const handleSpeechStart = () => {
-      console.log('Speech started');
       setIsListening(true);
     };
 
     const handleSpeechEnd = () => {
-      console.log('Speech ended');
       setIsListening(false);
     };
 
     const handleError = (error: any) => {
-      console.error('Vapi error:', error);
       setIsVapiActive(false);
       setIsListening(false);
-      if (error?.name === 'NotAllowedError' || error?.message?.includes('permission')) {
+      if (
+        error?.name === 'NotAllowedError' ||
+        error?.message?.includes('permission')
+      ) {
         setError('Please allow microphone access to use voice chat');
       } else if (error?.type === 'no-room') {
-        setError('Assistant configuration error. Please check your Vapi dashboard.');
+        setError(
+          'Assistant configuration error. Please check your Vapi dashboard.'
+        );
       } else {
         setError('An error occurred with the voice assistant.');
       }
@@ -84,10 +85,9 @@ const Home: NextPage = () => {
   const requestMicrophonePermission = async () => {
     try {
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-      stream.getTracks().forEach(track => track.stop());
+      stream.getTracks().forEach((track) => track.stop());
       return true;
     } catch (error) {
-      console.error('Microphone permission denied:', error);
       return false;
     }
   };
@@ -96,62 +96,67 @@ const Home: NextPage = () => {
     try {
       setError(null);
       if (isVapiActive) {
-        console.log('Stopping Vapi...');
         await vapi.stop();
       } else {
-        console.log('Checking microphone permission...');
         const hasPermission = await requestMicrophonePermission();
         if (!hasPermission) {
           setError('Please allow microphone access to use voice chat');
           return;
         }
 
-        console.log('Starting Vapi...');
         await vapi.start('3987ab6d-a529-4841-ad89-f8d333a099ba');
       }
     } catch (error: any) {
-      console.error('Failed to toggle voice interaction:', error);
       setIsVapiActive(false);
       setIsListening(false);
-      if (error?.name === 'NotAllowedError' || error?.message?.includes('permission')) {
+      if (
+        error?.name === 'NotAllowedError' ||
+        error?.message?.includes('permission')
+      ) {
         setError('Please allow microphone access to use voice chat');
       } else if (error?.type === 'no-room') {
-        setError('Assistant configuration error. Please check your Vapi dashboard.');
+        setError(
+          'Assistant configuration error. Please check your Vapi dashboard.'
+        );
       } else {
         setError('An error occurred while starting the voice assistant.');
       }
     }
   };
 
-  const handleCloseTalking = () => {
-    if (isVapiActive) {
-      vapi.stop();
-    }
-    setIsTalkingOpen(false);
-  };
-
   return (
     <>
       <Layout>
-        {isVapiActive ? <div className="w-full h-screen flex flex-col justify-center items-center text-white">
-          <Icon icon="mdi:microphone" className="w-20 h-20 mr-2" />
-          <p className='text-xl'>
-            😁You are now talking with virtual character simulating me! 🫢
-          </p>
-        </div> : <>
-          <Hero />
-          <About />
-          <Experience />
-          <FeaturedProjects />
-          <Contact />
-        </>}
+        {isTalkingOpen ? (
+          <div className="w-full h-screen flex flex-col justify-center items-center dark:text-white text-black">
+            <Icon icon="mdi:microphone" className="w-20 h-20 mr-2" />
+            <p className="text-xl">
+              😁You are now talking with virtual character simulating me! 🫢
+            </p>
+          </div>
+        ) : (
+          <>
+            <Hero />
+            <About />
+            <Skills />
+            <Experience />
+            <FeaturedProjects />
+            <Contact />
+          </>
+        )}
         <button
           className={`flex flex-row items-center fixed top-1/2 -translate-y-1/2 px-6 py-4 rounded-l-full transition-all duration-200
             ${isVapiActive ? 'right-0' : 'right-[-120px] hover:right-0'}
-            ${isVapiActive ? 'bg-red-500 text-white' : 'bg-black text-white dark:bg-white dark:text-black'}`}
+            ${isVapiActive
+              ? 'bg-red-500 text-white'
+              : 'bg-black text-white dark:bg-white dark:text-black'
+            }`}
           onClick={handleVapiButton}
         >
-          <Icon icon={isListening ? "mdi:microphone" : "mdi:microphone-off"} className={`w-6 h-6 mr-2`} />
+          <Icon
+            icon={isListening ? 'mdi:microphone' : 'mdi:microphone-off'}
+            className="w-6 h-6 mr-2"
+          />
           {isListening ? 'Listening...' : 'Talk with me'}
         </button>
       </Layout>

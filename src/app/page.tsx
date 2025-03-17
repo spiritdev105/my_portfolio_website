@@ -14,6 +14,7 @@ import { Icon } from '@iconify/react';
 import Vapi from '@vapi-ai/web';
 import type { NextPage } from 'next';
 import { useEffect, useState } from 'react';
+import AudioVisualizer from '@/components/AudioVisualizer';
 
 const vapi = new Vapi('3fa5a02c-d3e5-4e57-acfd-3a912a02df16');
 
@@ -28,6 +29,7 @@ const Home: NextPage = () => {
   const [isListening, setIsListening] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [isTalkingOpen, setIsTalkingOpen] = useState(false);
+  const [isAgentSpeaking, setIsAgentSpeaking] = useState(false);
 
   useEffect(() => {
     const handleCallStart = () => {
@@ -40,14 +42,27 @@ const Home: NextPage = () => {
       setIsVapiActive(false);
       setIsListening(false);
       setIsTalkingOpen(false);
+      setIsAgentSpeaking(false);
     };
 
     const handleSpeechStart = () => {
-      setIsListening(true);
+      setIsAgentSpeaking(true);
     };
 
     const handleSpeechEnd = () => {
-      setIsListening(false);
+      setIsAgentSpeaking(false);
+    };
+
+    const handleVolumeLevel = (volume: number) => {
+      // We can use volume level for more dynamic visualization if needed
+      console.log(`Volume level: ${volume}`);
+    };
+
+    const handleMessage = (message: any) => {
+      // Handle transcription messages to detect user speech
+      if (message.type === 'transcript') {
+        setIsListening(true);
+      }
     };
 
     const handleError = (error: any) => {
@@ -71,6 +86,8 @@ const Home: NextPage = () => {
     vapi.on('call-end', handleCallEnd);
     vapi.on('speech-start', handleSpeechStart);
     vapi.on('speech-end', handleSpeechEnd);
+    vapi.on('volume-level', handleVolumeLevel);
+    vapi.on('message', handleMessage);
     vapi.on('error', handleError);
 
     return () => {
@@ -78,6 +95,8 @@ const Home: NextPage = () => {
       vapi.off('call-end', handleCallEnd);
       vapi.off('speech-start', handleSpeechStart);
       vapi.off('speech-end', handleSpeechEnd);
+      vapi.off('volume-level', handleVolumeLevel);
+      vapi.off('message', handleMessage);
       vapi.off('error', handleError);
     };
   }, []);
@@ -129,9 +148,14 @@ const Home: NextPage = () => {
       <Layout>
         {isTalkingOpen ? (
           <div className="w-full h-screen flex flex-col justify-center items-center dark:text-white text-black">
-            <Icon icon="mdi:microphone" className="w-20 h-20 mr-2" />
-            <p className="text-xl">
-              😁You are now talking with virtual character simulating me! 🫢
+            <Icon icon="mdi:microphone" className="w-20 h-20 mb-4" />
+            <AudioVisualizer 
+              isActive={isVapiActive} 
+              isListening={isListening}
+              isAgentSpeaking={isAgentSpeaking}
+            />
+            <p className="text-xl mt-4">
+              {isListening ? "I'm listening..." : isAgentSpeaking ? "I'm speaking..." : "Let's chat!"}
             </p>
           </div>
         ) : (

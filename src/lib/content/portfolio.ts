@@ -20,9 +20,9 @@ export const author = {
 };
 
 export const seoData = {
-  title: 'Jonathan MacLeod | Front-End Developer',
+  title: 'Jonathan MacLeod | Fullstack Developer',
   description:
-    'Jonathan MacLeod is a front-end developer who specializes in building (and occasionally designing) exceptional visual interfaces.',
+    'Jonathan MacLeod is a fullstack developer who specializes in building (and occasionally designing) exceptional visual interfaces.',
   author: author.name,
   image:
     'https://raw.githubusercontent.com/Mickey9315/jonathan-portfolio/refs/heads/main/Screenshot%202025-02-17%20155256.png?token=GHSAT0AAAAAAC5TEQLSEYWFR2RY47M37PP4Z5TUNBQ',

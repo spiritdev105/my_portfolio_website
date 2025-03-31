@@ -15,25 +15,25 @@ export const socialLinks: StringKeyValueType = {
 };
 
 export const author = {
-  name: 'Jonathan MacLeod',
+  name: 'Jonas Anderson',
   email: 'master@olafdev.site',
 };
 
 export const seoData = {
-  title: 'Jonathan MacLeod | Fullstack Developer',
+  title: 'Jonas Anderson | Fullstack Developer',
   description:
-    'Jonathan MacLeod is a fullstack developer who specializes in building (and occasionally designing) exceptional visual interfaces.',
+    'Jonas Anderson is a fullstack developer who specializes in building (and occasionally designing) exceptional visual interfaces.',
   author: author.name,
   image:
     'https://raw.githubusercontent.com/Mickey9315/jonathan-portfolio/refs/heads/main/Screenshot%202025-02-17%20155256.png?token=GHSAT0AAAAAAC5TEQLSEYWFR2RY47M37PP4Z5TUNBQ',
   url: 'https://portfolio.olafdev.site/',
   keywords: [
     'OlafDev',
-    'Jonathan MacLeod',
+    'Jonas Anderson',
     '@olaf11071107',
     'olafdev.site',
     'Portfolio',
-    'Jonathan MacLeod ',
-    'Jonathan MacLeod Portfolio',
+    'Jonas Anderson ',
+    'Jonas Anderson Portfolio',
   ],
 };

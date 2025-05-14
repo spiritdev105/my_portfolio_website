@@ -145,6 +145,46 @@
   dependencies:
     glob "7.1.7"
 
+"@next/swc-darwin-arm64@13.5.3":
+  version "13.5.3"
+  resolved "https://registry.npmjs.org/@next/swc-darwin-arm64/-/swc-darwin-arm64-13.5.3.tgz"
+  integrity sha512-6hiYNJxJmyYvvKGrVThzo4nTcqvqUTA/JvKim7Auaj33NexDqSNwN5YrrQu+QhZJCIpv2tULSHt+lf+rUflLSw==
+
+"@next/swc-darwin-x64@13.5.3":
+  version "13.5.3"
+  resolved "https://registry.npmjs.org/@next/swc-darwin-x64/-/swc-darwin-x64-13.5.3.tgz"
+  integrity sha512-UpBKxu2ob9scbpJyEq/xPgpdrgBgN3aLYlxyGqlYX5/KnwpJpFuIHU2lx8upQQ7L+MEmz+fA1XSgesoK92ppwQ==
+
+"@next/swc-linux-arm64-gnu@13.5.3":
+  version "13.5.3"
+  resolved "https://registry.npmjs.org/@next/swc-linux-arm64-gnu/-/swc-linux-arm64-gnu-13.5.3.tgz"
+  integrity sha512-5AzM7Yx1Ky+oLY6pHs7tjONTF22JirDPd5Jw/3/NazJ73uGB05NqhGhB4SbeCchg7SlVYVBeRMrMSZwJwq/xoA==
+
+"@next/swc-linux-arm64-musl@13.5.3":
+  version "13.5.3"
+  resolved "https://registry.npmjs.org/@next/swc-linux-arm64-musl/-/swc-linux-arm64-musl-13.5.3.tgz"
+  integrity sha512-A/C1shbyUhj7wRtokmn73eBksjTM7fFQoY2v/0rTM5wehpkjQRLOXI8WJsag2uLhnZ4ii5OzR1rFPwoD9cvOgA==
+
+"@next/swc-linux-x64-gnu@13.5.3":
+  version "13.5.3"
+  resolved "https://registry.npmjs.org/@next/swc-linux-x64-gnu/-/swc-linux-x64-gnu-13.5.3.tgz"
+  integrity sha512-FubPuw/Boz8tKkk+5eOuDHOpk36F80rbgxlx4+xty/U71e3wZZxVYHfZXmf0IRToBn1Crb8WvLM9OYj/Ur815g==
+
+"@next/swc-linux-x64-musl@13.5.3":
+  version "13.5.3"
+  resolved "https://registry.npmjs.org/@next/swc-linux-x64-musl/-/swc-linux-x64-musl-13.5.3.tgz"
+  integrity sha512-DPw8nFuM1uEpbX47tM3wiXIR0Qa+atSzs9Q3peY1urkhofx44o7E1svnq+a5Q0r8lAcssLrwiM+OyJJgV/oj7g==
+
+"@next/swc-win32-arm64-msvc@13.5.3":
+  version "13.5.3"
+  resolved "https://registry.npmjs.org/@next/swc-win32-arm64-msvc/-/swc-win32-arm64-msvc-13.5.3.tgz"
+  integrity sha512-zBPSP8cHL51Gub/YV8UUePW7AVGukp2D8JU93IHbVDu2qmhFAn9LWXiOOLKplZQKxnIPUkJTQAJDCWBWU4UWUA==
+
+"@next/swc-win32-ia32-msvc@13.5.3":
+  version "13.5.3"
+  resolved "https://registry.npmjs.org/@next/swc-win32-ia32-msvc/-/swc-win32-ia32-msvc-13.5.3.tgz"
+  integrity sha512-ONcL/lYyGUj4W37D4I2I450SZtSenmFAvapkJQNIJhrPMhzDU/AdfLkW98NvH1D2+7FXwe7yclf3+B7v28uzBQ==
+
 "@next/swc-win32-x64-msvc@13.5.3":
   version "13.5.3"
   resolved "https://registry.npmjs.org/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-13.5.3.tgz"
@@ -1318,6 +1358,11 @@ fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz"
   integrity sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==
+
+fsevents@~2.3.2:
+  version "2.3.3"
+  resolved "https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz"
+  integrity sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==
 
 function-bind@^1.1.1:
   version "1.1.1"

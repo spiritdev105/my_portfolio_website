@@ -24,21 +24,17 @@ const About = () => {
       <main className="flex flex-col items-center gap-16 lg:items-start lg:flex-row">
         <div className="space-y-4 lg:w-3/5">
           <p>
-            Hi, my name is David Johnson.
-            <br /> I'm an Artist as well as crazy full stack developer who
-            wants to explore every tech stack.
+            Hi, my name is William Jones.
+            <br /> I'm an Artist as well as crazy full stack developer who wants
+            to explore every tech stack.
           </p>
           <p>
-            Skilled developer with extensive experience in all fields of {' '}
-            <Link
-              className="text-accent"
-            >
-              Web, Mobile, AI, Blockchain
-            </Link>
-            .
+            Skilled developer with extensive experience in all fields of{' '}
+            <Link className="text-accent">Web, Mobile, AI, Blockchain</Link>.
           </p>
           <p>
-            My main focus is developing modern and wonderful web and mobile app using sophisticated technology.
+            My main focus is developing modern and wonderful web and mobile app
+            using sophisticated technology.
           </p>
 
           {list && (

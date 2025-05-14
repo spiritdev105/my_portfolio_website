@@ -8,29 +8,31 @@ import { StringKeyValueType } from '../types';
 
 export const socialLinks: StringKeyValueType = {
   github: 'https://github.com/spiritdev105',
-  linkedin: 'https://www.linkedin.com/in/david-johnson-ksbm105718',
+  linkedin: 'https://www.linkedin.com/in/william-jones-040089364/',
+  whatsapp:'',
+  telegram:''
 };
 
 export const author = {
-  name: 'David Johnson',
-  email: 'david.johnson105718@gmail.com',
+  name: 'William Jones',
+  email: 'william.jones97331@gmail.com',
 };
 
 export const seoData = {
-  title: 'David Johnson | Full-Stack Developer',
+  title: 'William Jones | Full-Stack Developer',
   description:
-    'David Johnson is a full-stack developer who specializes in building (and occasionally designing) exceptional visual interfaces.',
+    'William Jones is a full-stack developer who specializes in building (and occasionally designing) exceptional visual interfaces.',
   author: author.name,
   image:
     'https://avatars.githubusercontent.com/u/188979260?v=4',
-  url: 'https://vatsalsinghkv.vercel.app/',
+  url: 'https://williamjones.vercel.app/',
   keywords: [
-    'David',
-    'David Johnson',
-    '@davidjohnson',
-    'davidjohnson',
+    'William',
+    'William Jones',
+    '@williamjones',
+    'williamjones',
     'Portfolio',
-    'David Portfolio ',
-    'David Johnson Portfolio',
+    'William Portfolio ',
+    'William Jones Portfolio',
   ],
 };

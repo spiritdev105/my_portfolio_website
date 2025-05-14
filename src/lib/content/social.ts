@@ -7,6 +7,14 @@ export const socialSection: SocialSectionType = {
       icon: 'tabler:brand-github',
       url: socialLinks.github,
     },
+    {
+      icon: 'tabler:brand-telegram',
+      url: socialLinks.telegram,
+    },
+    {
+      icon: 'tabler:brand-whatsapp',
+      url: socialLinks.whatsapp,
+    },
     // {
     //   icon: 'mdi:instagram',
     //   url: socialLinks.instagram,
